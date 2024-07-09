@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "638471562637",
+    "firebase_url": "https://dhack-62204-default-rtdb.firebaseio.com",
+    "project_id": "dhack-62204",
+    "storage_bucket": "dhack-62204.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638471562637:android:f44d9d4811bbeb351089c4",
+        "android_client_info": {
+          "package_name": "daniel.brian.dhack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxRd-QUzPRvgd56qk5kLX4EIJxl3vQTyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
