@@ -1,4 +1,4 @@
-package daniel.brian.autoexpress.utils
+package daniel.brian.dhack.utils
 
 import android.util.Patterns
 
@@ -12,7 +12,7 @@ data class RegisterFieldState(
     val password: RegisterValidation
 )
 
-fun validateEmail(email: String) : RegisterValidation{
+fun validateEmail(email: String) : RegisterValidation {
     if (email.isEmpty()){
         return RegisterValidation.Failed("Email cannot be empty")
     }
@@ -21,10 +21,10 @@ fun validateEmail(email: String) : RegisterValidation{
         return RegisterValidation.Failed("Wrong Email format")
     }
 
-    return  RegisterValidation.Success
+    return RegisterValidation.Success
 }
 
-fun validatePassword(password: String): RegisterValidation{
+fun validatePassword(password: String): RegisterValidation {
     if (password.isEmpty()){
         return RegisterValidation.Failed("Password cannot be empty")
     }

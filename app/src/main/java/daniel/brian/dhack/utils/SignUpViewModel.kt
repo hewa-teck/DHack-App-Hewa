@@ -5,11 +5,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import daniel.brian.autoexpress.utils.Constants.USER_COLLECTION
-import daniel.brian.autoexpress.utils.RegisterFieldState
-import daniel.brian.autoexpress.utils.RegisterValidation
+import daniel.brian.dhack.utils.RegisterFieldState
+import daniel.brian.dhack.utils.RegisterValidation
 import daniel.brian.autoexpress.utils.Resource
-import daniel.brian.autoexpress.utils.validateEmail
-import daniel.brian.autoexpress.utils.validatePassword
+import daniel.brian.dhack.utils.validateEmail
+import daniel.brian.dhack.utils.validatePassword
 import daniel.brian.dhack.data.User
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -13,7 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import daniel.brian.autoexpress.utils.RegisterValidation
+import daniel.brian.dhack.utils.RegisterValidation
 import daniel.brian.autoexpress.utils.Resource
 import daniel.brian.dhack.R
 import daniel.brian.dhack.activities.HomeActivity
