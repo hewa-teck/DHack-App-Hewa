@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -89,13 +90,13 @@ class SignUpFragment : Fragment() {
                 when(it){
                     is Resource.Error -> {
                         Snackbar.make(requireView(), "Similar email exists.Try another email!", Snackbar.LENGTH_LONG).show()
-                        binding.btnRegister.revertAnimation()
                     }
                     is Resource.Loading ->{
-                        binding.btnRegister.startAnimation()
+                        Toast.makeText(requireContext(), "Loading...", Toast.LENGTH_LONG)
+                            .show()
                     }
                     is Resource.Success ->{
-                        binding.btnRegister.revertAnimation()
+
                         Snackbar.make(requireView(),"Registration Successful!", Snackbar.LENGTH_LONG).show()
                         Intent(requireActivity(), HomeActivity::class.java).also { intent ->
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

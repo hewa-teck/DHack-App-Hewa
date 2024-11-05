@@ -60,15 +60,14 @@ class LoginFragment : Fragment() {
                     is Resource.Error -> {
                         Toast.makeText(requireContext(), it.message.toString(), Toast.LENGTH_LONG)
                             .show()
-                        binding.btnLogin.revertAnimation()
                     }
 
                     is Resource.Loading -> {
-                        binding.btnLogin.startAnimation()
+                        Toast.makeText(requireContext(), "Loading...", Toast.LENGTH_LONG)
+                            .show()
                     }
 
                     is Resource.Success -> {
-                        binding.btnLogin.revertAnimation()
                         Intent(requireActivity(), HomeActivity::class.java).also { intent ->
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(intent)

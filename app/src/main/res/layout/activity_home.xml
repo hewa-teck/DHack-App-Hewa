@@ -245,7 +245,7 @@
     </androidx.cardview.widget.CardView>
 
 
-    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+    <Button
         android:id="@+id/btnMap"
         style="@style/blueButtonStyle"
         android:layout_width="0dp"
@@ -255,7 +255,7 @@
         app:layout_constraintStart_toStartOf="@id/guidelineMrgStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineMrgEnd"
         app:layout_constraintTop_toBottomOf="@id/guidelineBottomReadings"
-        app:spinning_bar_color="@color/g_white" />
+    />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineMrgTop"

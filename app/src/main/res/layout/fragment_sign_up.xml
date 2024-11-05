@@ -36,12 +36,12 @@
         android:layout_height="0dp"
         android:hint="@string/username"
         app:counterEnabled="true"
-        app:counterMaxLength="20"
-        app:counterTextColor="@color/g_black"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/black"
         app:endIconMode="clear_text"
         app:helperText="@string/required"
-        app:helperTextTextColor="@color/g_black"
-        app:hintTextColor="@color/g_black"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottomUsername"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
@@ -66,12 +66,12 @@
         android:layout_height="0dp"
         android:hint="@string/email"
         app:counterEnabled="true"
-        app:counterMaxLength="20"
-        app:counterTextColor="@color/g_black"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/black"
         app:endIconMode="clear_text"
         app:helperText="@string/required"
-        app:helperTextTextColor="@color/g_black"
-        app:hintTextColor="@color/g_black"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottomUserEmail"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
@@ -96,12 +96,12 @@
         android:layout_height="0dp"
         android:hint="@string/password"
         app:counterEnabled="true"
-        app:counterMaxLength="20"
-        app:counterTextColor="@color/g_black"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/black"
         app:endIconMode="password_toggle"
         app:helperText="@string/required"
-        app:helperTextTextColor="@color/g_black"
-        app:hintTextColor="@color/g_black"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottomUserPassword"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
@@ -127,10 +127,10 @@
         android:hint="@string/phone"
         app:counterEnabled="true"
         app:counterMaxLength="20"
-        app:counterTextColor="@color/g_black"
+        app:counterTextColor="@color/black"
         app:helperText="@string/required"
-        app:helperTextTextColor="@color/g_black"
-        app:hintTextColor="@color/g_black"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottomContinue"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
@@ -148,7 +148,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+    <Button
         android:id="@+id/btnRegister"
         style="@style/blueButtonStyle"
         android:layout_width="0dp"
@@ -158,7 +158,7 @@
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/guidelineTopLoginGoogle"
-        app:spinning_bar_color="@color/g_white" />
+    />
 
 
     <TextView
